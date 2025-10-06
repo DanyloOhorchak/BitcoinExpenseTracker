@@ -2,9 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
-    id("kotlin-kapt")
 }
 
 android {
@@ -69,9 +67,9 @@ dependencies {
     implementation(libs.room.paging)
     ksp(libs.room.compiler)
 
-    // Hilt
-    implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
+    // Hilt (disabled for now)
+    // implementation(libs.hilt.android)
+    // kapt(libs.hilt.compiler)
 
     // Retrofit/OkHttp
     implementation(libs.retrofit)

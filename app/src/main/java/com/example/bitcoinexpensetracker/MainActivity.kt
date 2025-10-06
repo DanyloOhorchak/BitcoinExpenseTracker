@@ -15,9 +15,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.bitcoinexpensetracker.ui.screens.AddTransactionScreen
 import com.example.bitcoinexpensetracker.ui.screens.HomeScreen
 import com.example.bitcoinexpensetracker.ui.theme.BitcoinExpenseTrackerTheme
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
